@@ -10,7 +10,10 @@ let app = Target(
         "UILaunchStoryboardName": .string("Launchscreen")
     ]),
     sources: ["Sources/App/**"],
-    resources: ["Resources/**"]
+    resources: ["Resources/**"],
+    dependencies: [
+        .project(target: "Flowers", path: .relativeToRoot("Projects/Flowers"))
+    ]
 )
 
 let project = Project(

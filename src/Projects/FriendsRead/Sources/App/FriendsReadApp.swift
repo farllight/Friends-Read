@@ -12,7 +12,9 @@ import SwiftUI
 struct FriendsReadApp: App {
     var body: some Scene {
         WindowGroup {
-            Text("Hello, world!")
+            BookListFactoryImpl()
+                .make()
+                .view            
         }
     }
 }
