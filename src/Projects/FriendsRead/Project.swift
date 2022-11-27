@@ -5,7 +5,7 @@ let app = Target(
     platform: .iOS,
     product: .app,
     bundleId: "com.farllight.friendsread",
-    deploymentTarget: .iOS(targetVersion: "14.0", devices: .iphone),
+    deploymentTarget: .iOS(targetVersion: "14.0.0", devices: .iphone),
     infoPlist: .extendingDefault(with: [
         "UILaunchStoryboardName": .string("Launchscreen")
     ]),
