@@ -12,7 +12,8 @@ let app = Target(
     sources: ["Sources/App/**"],
     resources: ["Resources/**"],
     dependencies: [
-        .project(target: "Flowers", path: .relativeToRoot("Projects/Flowers"))
+        .project(target: "Flowers", path: .relativeToRoot("Projects/Flowers")),
+        .project(target: "DesignSystem", path: .relativeToRoot("Projects/FriendsUI"))
     ]
 )
 

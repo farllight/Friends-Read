@@ -19,7 +19,13 @@ final class BookListViewModel: ObservableObject {
     }
     
     enum Event {
+        /// Загрузка данных
         case start
+        
+        /// Добавление новой книги в список
+        case add
+        
+        /// Пока не используется
         case tap
     }
     
@@ -38,5 +44,9 @@ final class BookListViewModel: ObservableObject {
     
     func demand() {
         onEvent(.start)
-    }    
+    }
+    
+    func add() {
+        onEvent(.add)
+    }
 }

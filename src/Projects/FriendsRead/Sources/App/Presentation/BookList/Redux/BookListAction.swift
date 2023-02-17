@@ -11,4 +11,5 @@ import Flowers
 enum BookListAction: FlowAction {
     case load
     case tap
+    case add
 }

@@ -59,26 +59,13 @@ struct BookListView: View {
                 )
             }
         }
+        .navigationTitle("Friends Read")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: viewModel.add) {
+                    Image(systemName: "plus.app")
+                }
+            }
+        }
     }
 }
-
-//struct BookListView_Preview: PreviewProvider {
-//    static var previews: some View {
-//        BookListView(viewModel: .init(
-//            items: [
-//                .init(
-//                    id: "1",
-//                    name: "Гарри Поттер",
-//                    author: "Джоан Роулинг",
-//                    description: nil
-//                ),
-//                .init(
-//                    id: "2",
-//                    name: "Белый клык",
-//                    author: "Джек Лондон",
-//                    description: "Посоветовал друг"
-//                )
-//            ]
-//        ))
-//    }
-//}

@@ -7,6 +7,7 @@
 //
 
 import Flowers
+import DesignSystem
 
 final class BookListFactoryImpl: BookListFactory {
     func make() -> BookListFeature {
@@ -35,6 +36,7 @@ final class BookListFactoryImpl: BookListFactory {
         uiMapper.viewModel = viewModel
         
         let view = BookListView(viewModel: viewModel)
+            .asController()
         return BookListFeature(view: view)
     }
 }

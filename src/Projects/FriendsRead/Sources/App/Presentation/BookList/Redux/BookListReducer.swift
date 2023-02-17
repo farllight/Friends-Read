@@ -19,7 +19,7 @@ final class BookListReducer: FlowReducer {
         switch action {
         case .load:
             return (state: .success, effect: nil)
-        case .tap:
+        case .tap, .add:
             return (state: state, effect: nil)
         }
     }

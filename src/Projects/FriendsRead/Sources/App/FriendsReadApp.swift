@@ -12,9 +12,12 @@ import SwiftUI
 struct FriendsReadApp: App {
     var body: some Scene {
         WindowGroup {
-            BookListFactoryImpl()
-                .make()
-                .view            
+            NavigationView {
+                BookListFactoryImpl()
+                    .make()
+                    .view
+            }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

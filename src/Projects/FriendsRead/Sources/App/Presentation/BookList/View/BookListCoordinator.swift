@@ -21,6 +21,8 @@ final class BookListCoordinator {
             store.dispatch(action: .load)
         case .tap:
             store.dispatch(action: .tap)
+        case .add:
+            store.dispatch(action: .add)
         }
     }
 }
