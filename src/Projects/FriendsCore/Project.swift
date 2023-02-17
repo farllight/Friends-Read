@@ -33,6 +33,16 @@ let networkTests = Target(
     ]
 )
 
+let friendsCore = Target(
+    name: "FriendsCore",
+    platform: .iOS,
+    product: .framework,
+    bundleId: "com.farllight.friendsread.friendsCore",
+    deploymentTarget: .iOS(targetVersion: "14.0.0", devices: .iphone),
+    sources: ["Sources/FriendsCore/**"],
+    dependencies: []
+)
+
 
 let project = Project(
     name: "FriendsCore",
@@ -40,6 +50,7 @@ let project = Project(
     targets: [
         networkAPI,
         networkImpl,
-        networkTests
+        networkTests,
+        friendsCore
     ]
 )
